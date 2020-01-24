@@ -21,12 +21,13 @@ function readNumber() {
 // readNumber();
 
 function random(min, max) {
-  while (true) {
-    let value = Math.random() * 10;
-    if (min <= value && value < max) {
-      return value;
-    }
-  }
+  // while (true) {
+  //   let value = Math.random() * 10;
+  //   if (min <= value && value < max) {
+  //     return value;
+  //   }
+  // }
+  return min + Math.random() * (max - min);
 };
 alert(random(1, 5));
 alert(random(1, 5));
