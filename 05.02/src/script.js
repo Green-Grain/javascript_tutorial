@@ -4,3 +4,8 @@ function task1() {
   alert(+num1 + +num2);
 }
 // task1();
+
+function task2() {
+  alert( Math.round(6.35 * 10) / 10 );
+};
+// task2();
