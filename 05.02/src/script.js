@@ -9,3 +9,13 @@ function task2() {
   alert( Math.round(6.35 * 10) / 10 );
 };
 // task2();
+
+function readNumber() {
+  let input = NaN;
+  while (isNaN(input)) {
+    input = prompt('数値を入力してください', '0');
+    if (null == input) return;
+  }
+  alert('inputed ' + input);  
+};
+// readNumber();
