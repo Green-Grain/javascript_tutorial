@@ -19,3 +19,15 @@ function readNumber() {
   alert('inputed ' + input);  
 };
 // readNumber();
+
+function random(min, max) {
+  while (true) {
+    let value = Math.random() * 10;
+    if (min <= value && value < max) {
+      return value;
+    }
+  }
+};
+alert(random(1, 5));
+alert(random(1, 5));
+alert(random(1, 5));
