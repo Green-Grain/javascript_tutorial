@@ -10,5 +10,22 @@ function task2() {
   styles.unshift('Rap', 'Reggae');
   console.table(styles);
 };
-task2();
+// task2();
+
+function sumInput() {
+  let inputs = [];
+  while (true) {
+    let input = prompt('値を入力してください', '');
+    if (false == isFinite(input) || input === null || input === '') {
+      break;
+    }
+    inputs.push(parseInt(input));
+  }
+  let total = 0;
+  for (value of inputs) {
+    total += value;
+  }
+  return total;
+};
+console.log(sumInput());
 
