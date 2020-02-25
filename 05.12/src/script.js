@@ -12,12 +12,12 @@ function task1() {
 
 function task2() {
   let room = {
-      number: 23
+    number: 23
   };
 
   let meetup = {
     title: "Conference",
-    occupiedBy: [{name: "John"}, {name: "Alice"}],
+    occupiedBy: [{ name: "John" }, { name: "Alice" }],
     place: room
   };
 
@@ -25,8 +25,8 @@ function task2() {
   room.occupiedBy = meetup;
   meetup.self = meetup;
 
-  alert( JSON.stringify(meetup, function replacer(key, value) {
-    if (key != "" && value == meetup)  return undefined;
+  alert(JSON.stringify(meetup, function replacer(key, value) {
+    if (key != "" && value == meetup) return undefined;
     return value;
   }));
 }
